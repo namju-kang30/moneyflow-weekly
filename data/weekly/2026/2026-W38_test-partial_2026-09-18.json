@@ -1,0 +1,661 @@
+{
+  "schema_version": "1.0",
+  "meta": {
+    "record_id": "2026-W38-partial-2026-09-18",
+    "status": "test_partial",
+    "source_stage": "weekly_synthesis_from_final_daily",
+    "complete_week": false,
+    "as_of": "2026-09-18",
+    "note": "테스트용 부분 주간 자료. 2026-09-17 morning, 2026-09-18 morning/afternoon의 status=final 레코드만 사용."
+  },
+  "period": {
+    "type": "weekly",
+    "id": "2026-W38",
+    "start_date": "2026-09-14",
+    "end_date": "2026-09-20",
+    "observed_start": "2026-09-17",
+    "observed_end": "2026-09-18"
+  },
+  "source": {
+    "daily_report_count": 3,
+    "expected_max_daily_report_count": 14,
+    "source_records": [
+      "2026-09-17-morning",
+      "2026-09-18-morning",
+      "2026-09-18-afternoon"
+    ],
+    "missing_or_not_final_records": [
+      "2026-09-17-afternoon",
+      "2026-09-14-morning",
+      "2026-09-14-afternoon",
+      "2026-09-15-morning",
+      "2026-09-15-afternoon",
+      "2026-09-16-morning",
+      "2026-09-16-afternoon",
+      "2026-09-19-morning",
+      "2026-09-19-afternoon",
+      "2026-09-20-morning",
+      "2026-09-20-afternoon"
+    ],
+    "selection_rule": "status == final only",
+    "source_repository": "namju-kang30/moneyflow-daily"
+  },
+  "weekly_thesis": {
+    "summary": "관측된 9월 17~18일의 시장 판단은 에너지발 물가 압력과 주요국 긴축 재가격이 할인율 상단을 높였지만, 유가와 장기금리가 단기 진정되자 위험선호가 일부 회복되었고, 그 안에서도 HBM과 데이터센터 전력 인프라처럼 실물 병목과 설비투자 근거가 확인되는 영역으로 관심이 집중되는 선별 장세로 수렴했다.",
+    "change_from_previous_week": "이전 Weekly 레코드가 없어 주간 대비 비교는 수행하지 않음. 대신 관측기간 내부에서 9/17의 비용·할인율 충격 중심 시각이 9/18 오후에는 '고비용 환경은 유지되지만 실적·수주·설비투자에 따라 차별화되는 시장'으로 조정된 변화가 확인됨.",
+    "key_shift": "거시 충격 단독 설명 → 거시 제약 + 산업별 실적 가시성의 결합"
+  },
+  "narratives": [
+    {
+      "narrative_id": "N1",
+      "title": "긴축 재가격과 에너지 비용 충격",
+      "status": "WEAKENING",
+      "first_seen": "2026-09-17-morning",
+      "final_view": "Fed 인상과 주요국 긴축 흐름은 할인율 부담을 유지하지만, 9/18로 갈수록 유가와 미 장기금리가 고점에서 일부 후퇴해 '충격의 추가 확대' 근거는 약해짐.",
+      "supporting_evidence": [
+        "Fed 9/16 기준금리 25bp 인상, 3.75~4.00%",
+        "9/17 글로벌 시장에서 미 10년물 수익률이 5% 아래로 후퇴",
+        "브렌트·WTI가 9/15 고점 이후 9/18까지 하락"
+      ],
+      "counter_evidence": [
+        "원/달러가 9/18 1,383.3원으로 7거래일 연속 상승해 국내 비용·수급 부담은 지속",
+        "BOJ도 9/18 정책금리를 1.25%로 인상해 글로벌 긴축 축은 유지"
+      ],
+      "strength_components": {
+        "coverage": "3/3 records",
+        "evidence": "통화정책·채권금리·유가·환율의 독립 근거",
+        "continuity": "9/17~9/18 연속",
+        "recency": "9/18 오후까지 유지하되 강도는 완화"
+      }
+    },
+    {
+      "narrative_id": "N2",
+      "title": "AI 반도체 — HBM 병목과 CAPEX 지속성",
+      "status": "STABLE",
+      "first_seen": "2026-09-17-morning",
+      "final_view": "HBM 공급 제약은 실수요 근거로 유지됐지만, AI 설비투자 둔화 우려와 높은 밸류에이션이 동시에 제기되어 투자 논리가 추가로 강화됐다고 보기는 어려움.",
+      "supporting_evidence": [
+        "HBM 부족이 AI 칩 비용과 공급 제약으로 연결된다는 근거",
+        "AI 데이터센터 설비투자 자체는 계속 핵심 수요원으로 평가"
+      ],
+      "counter_evidence": [
+        "AI CAPEX 둔화 가능성에 대한 시장 경계",
+        "공급 정상화·수율 개선·밸류에이션 조정 위험"
+      ],
+      "strength_components": {
+        "coverage": "3/3 records",
+        "evidence": "수요와 공급병목 근거는 유지, 신규 직접 근거는 제한적",
+        "continuity": "연속",
+        "recency": "9/18 오후까지 유지"
+      }
+    },
+    {
+      "narrative_id": "N3",
+      "title": "AI 데이터센터 수요가 전력·냉각·송배전 인프라로 확산",
+      "status": "STRENGTHENING",
+      "first_seen": "2026-09-17-morning",
+      "final_view": "미국 전력기기 장기 납기라는 공급병목 근거에 데이터센터 전력·냉각 수요, 국내 전력 전환 정책 경로가 더해지며 단순 AI 테마보다 실물 인프라 투자 논리로 확장됨.",
+      "supporting_evidence": [
+        "고압 변압기·차단기 등 전력설비의 장기 조달 문제",
+        "데이터센터 전력·냉각 인프라 수요 확대",
+        "국내 발전원 전환과 전력 공급 투자 필요성"
+      ],
+      "counter_evidence": [
+        "생산능력 증설 시 납기와 가격 프리미엄이 정상화될 가능성",
+        "원자재 비용·프로젝트 지연·높은 종목 집중도와 밸류에이션"
+      ],
+      "strength_components": {
+        "coverage": "3/3 records",
+        "evidence": "공급병목 + 수요 + 정책 경로의 독립 근거",
+        "continuity": "연속",
+        "recency": "9/18 오후까지 추가 근거"
+      }
+    },
+    {
+      "narrative_id": "N4",
+      "title": "고비용 환경 속 선별적 위험선호 회복",
+      "status": "STRENGTHENING",
+      "first_seen": "2026-09-18-morning",
+      "final_view": "유가와 장기금리의 단기 하락이 글로벌 주가 반등에 이어 9/18 국내 증시 강세로 연결되면서, '긴축이면 위험자산 전반 약세'라는 단순 해석이 약해짐. 다만 환율 상승과 높은 금리 수준 때문에 전면적 위험선호 전환으로 보기는 어려움.",
+      "supporting_evidence": [
+        "9/17 글로벌 주가 반등과 미 장기금리 하락",
+        "9/18 코스피 6,894.23, 전일 대비 2.66% 상승",
+        "9/18 외국인 순매수 전환"
+      ],
+      "counter_evidence": [
+        "원/달러 1,383.3원으로 상승",
+        "추가 긴축 가능성과 높은 장기금리 수준"
+      ],
+      "strength_components": {
+        "coverage": "2/3 records",
+        "evidence": "시장가격 반응으로 확인",
+        "continuity": "짧음",
+        "recency": "9/18 오후에 가장 강함"
+      }
+    }
+  ],
+  "timeline": [
+    {
+      "record_id": "2026-09-17-morning",
+      "N1": "NEW",
+      "N2": "NEW",
+      "N3": "NEW",
+      "N4": "-"
+    },
+    {
+      "record_id": "2026-09-18-morning",
+      "N1": "STRENGTHENING",
+      "N2": "STABLE",
+      "N3": "STRENGTHENING",
+      "N4": "NEW"
+    },
+    {
+      "record_id": "2026-09-18-afternoon",
+      "N1": "WEAKENING",
+      "N2": "STABLE",
+      "N3": "STRENGTHENING",
+      "N4": "STRENGTHENING"
+    }
+  ],
+  "events": [
+    {
+      "event_id": "E01",
+      "first_seen": "2026-09-17-morning",
+      "event": "Fed가 9/16 기준금리를 25bp 인상해 3.75~4.00%로 조정",
+      "narrative_ids": [
+        "N1"
+      ],
+      "significance": "할인율과 차입비용 재상승의 기준점",
+      "source_urls": [
+        "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm"
+      ]
+    },
+    {
+      "event_id": "E02",
+      "first_seen": "2026-09-17-morning",
+      "event": "미 10년물 금리가 5% 부근까지 올랐다가 9/17 4.9%대로 후퇴",
+      "narrative_ids": [
+        "N1",
+        "N4"
+      ],
+      "significance": "긴축 충격은 유지되지만 주식 할인율 압력이 단기 완화",
+      "source_urls": [
+        "https://www.reuters.com/world/china/global-markets-global-markets-2026-09-17/"
+      ]
+    },
+    {
+      "event_id": "E03",
+      "first_seen": "2026-09-17-morning",
+      "event": "중동 공급 우려로 급등한 국제유가가 9/15 이후 9/18까지 일부 하락",
+      "narrative_ids": [
+        "N1",
+        "N4"
+      ],
+      "significance": "에너지발 물가 충격의 추가 확대 우려가 완화",
+      "source_urls": [
+        "https://www.reuters.com/business/energy/oil-prices-rise-saudi-pipeline-outage-fresh-attacks-raise-supply-concerns-2026-09-15/",
+        "https://www.reuters.com/business/energy/oil-prices-fall-1-hopes-limited-supply-disruptions-2026-09-18/"
+      ]
+    },
+    {
+      "event_id": "E04",
+      "first_seen": "2026-09-17-morning",
+      "event": "한국은행의 8/27 기준금리 인상과 취약부문 부담이 계속 핵심 국내 금융여건으로 반영",
+      "narrative_ids": [
+        "N1"
+      ],
+      "significance": "가계·기업의 금리 민감도가 균등하지 않다는 판단을 유지",
+      "source_urls": [
+        "https://www.bok.or.kr/portal/bbs/P0000559/view.do?depth=201150&menuNo=200690&nttId=11064191&oldMenuNo=201150&pageIndex=1&pageUnit=10&programType=newsData&searchCnd=1",
+        "https://www.reuters.com/world/asia-pacific/bank-korea-minutes-show-possible-policy-rift-back-to-back-rate-hikes-2026-09-15/"
+      ]
+    },
+    {
+      "event_id": "E05",
+      "first_seen": "2026-09-17-morning",
+      "event": "국내 소비자물가와 생산자물가가 비용 압력 점검 필요성을 높임",
+      "narrative_ids": [
+        "N1"
+      ],
+      "significance": "고유가·환율의 국내 가격 전가 여부가 다음 단계의 핵심 확인 변수",
+      "source_urls": [
+        "https://www.yna.co.kr/view/AKR20260917177300002"
+      ]
+    },
+    {
+      "event_id": "E06",
+      "first_seen": "2026-09-17-morning",
+      "event": "HBM 공급 부족이 AI 칩 비용과 공급 제약으로 연결",
+      "narrative_ids": [
+        "N2"
+      ],
+      "significance": "AI 수요가 실제 반도체 공급병목으로 연결된 근거",
+      "source_urls": [
+        "https://www.reuters.com/world/asia-pacific/chinas-ai-chipmakers-raise-prices-high-bandwidth-memory-shortage-bites-2026-09-10/"
+      ]
+    },
+    {
+      "event_id": "E07",
+      "first_seen": "2026-09-18-morning",
+      "event": "AI CAPEX 지속성에 대한 시장 경계가 부각",
+      "narrative_ids": [
+        "N2",
+        "N3"
+      ],
+      "significance": "구조적 수요와 현재 주가의 기대 수준을 분리해야 할 필요성 강화",
+      "source_urls": [
+        "https://www.reuters.com/legal/transactional/investors-nervous-about-ai-spending-slowdown-after-industry-warnings-2026-09-15/"
+      ]
+    },
+    {
+      "event_id": "E08",
+      "first_seen": "2026-09-17-morning",
+      "event": "미국 전력망 장비 부족과 변압기 장기 납기",
+      "narrative_ids": [
+        "N3"
+      ],
+      "significance": "데이터센터 증설이 전력설비 공급병목으로 전이되는 실물 근거",
+      "source_urls": [
+        "https://www.reuters.com/business/energy/us-power-companies-scramble-secure-equipment-surging-data-center-demand-strains-2026-07-09/"
+      ]
+    },
+    {
+      "event_id": "E09",
+      "first_seen": "2026-09-18-morning",
+      "event": "AI 데이터센터 전력·냉각 인프라 수요 확대와 밸류에이션 위험이 동시에 부각",
+      "narrative_ids": [
+        "N3"
+      ],
+      "significance": "전력 인프라 논리가 수요 확장과 가격 위험을 동시에 포함하도록 정교화",
+      "source_urls": [
+        "https://www.reuters.com/business/energy/not-just-nvidia-these-power-cooling-firms-are-riding-trillion-dollar-data-centre-2026-09-01/"
+      ]
+    },
+    {
+      "event_id": "E10",
+      "first_seen": "2026-09-17-morning",
+      "event": "핵심광물·에너지 공급망 다변화 정책 논의",
+      "narrative_ids": [
+        "N3"
+      ],
+      "significance": "에너지·인프라 투자의 정책 배경을 보완",
+      "source_urls": [
+        "https://www.reuters.com/world/asia-pacific/south-korea-puts-critical-minerals-energy-forefront-inaugural-central-asia-2026-09-16/"
+      ]
+    },
+    {
+      "event_id": "E11",
+      "first_seen": "2026-09-18-afternoon",
+      "event": "BOJ가 정책금리를 1.25%로 인상",
+      "narrative_ids": [
+        "N1"
+      ],
+      "significance": "글로벌 긴축 재가격이 미국에 국한되지 않음을 확인",
+      "source_urls": [
+        "https://www.reuters.com/world/asia-pacific/boj-raises-interest-rates-31-year-high-widely-expected-move-2026-09-18/"
+      ]
+    },
+    {
+      "event_id": "E12",
+      "first_seen": "2026-09-18-afternoon",
+      "event": "코스피가 9/18 2.66% 오른 6,894.23으로 마감",
+      "narrative_ids": [
+        "N4"
+      ],
+      "significance": "금리·유가 부담에도 위험자산 반등이 가능함을 실제 시장가격으로 확인",
+      "source_urls": [
+        "https://en.yna.co.kr/view/AEN20260918007351320"
+      ]
+    },
+    {
+      "event_id": "E13",
+      "first_seen": "2026-09-18-afternoon",
+      "event": "국내 발전원 전환 로드맵이 전력 공급망 투자 필요성을 보완",
+      "narrative_ids": [
+        "N3"
+      ],
+      "significance": "AI 전력수요 논리를 국내 전력 인프라 투자 경로와 연결",
+      "source_urls": [
+        "https://www.mk.co.kr/news/economy/12156511"
+      ]
+    },
+    {
+      "event_id": "E14",
+      "first_seen": "2026-09-18-afternoon",
+      "event": "글라스기판 상용화 준비 진행 상황이 반도체 후공정 혁신 소재의 보조 근거로 추가",
+      "narrative_ids": [
+        "N2"
+      ],
+      "significance": "반도체 투자 가설을 메모리 외 공급망으로 확장하되 직접 수혜 단정은 경계",
+      "source_urls": [
+        "https://skc.kr/m/kor/Conmmunication/news/newsDetail.do?seq=1743"
+      ]
+    }
+  ],
+  "investment_theses": [
+    {
+      "theme": "국내 반도체·HBM",
+      "representative_etf": {
+        "name": "TIGER Fn반도체TOP10",
+        "ticker": "396500"
+      },
+      "start_view": "HBM 공급 부족과 AI 데이터센터 투자로 이익 가시성 개선 가능",
+      "end_view": "핵심 논리는 유지되지만 CAPEX 둔화 우려와 밸류에이션·공급 정상화 위험도 함께 커져 '강화'보다 '유지'가 적절",
+      "change": "STABLE",
+      "added_evidence": [
+        "AI CAPEX 지속성 점검 필요",
+        "9/18 위험선호 회복"
+      ],
+      "weakening_conditions": [
+        "HBM 공급 정상화",
+        "AI 서버 투자 지연",
+        "이익 추정치 정체 속 멀티플 하락"
+      ]
+    },
+    {
+      "theme": "AI 전력·송배전 인프라",
+      "representative_etf": {
+        "name": "KODEX AI전력핵심설비",
+        "ticker": "487240"
+      },
+      "start_view": "변압기·전력망 장기 납기와 데이터센터 전력수요",
+      "end_view": "전력기기 병목에 전력·냉각 수요와 정책 경로가 추가되어 투자 논리가 확장",
+      "change": "STRENGTHENING",
+      "added_evidence": [
+        "데이터센터 전력·냉각 수요",
+        "국내 발전원 전환과 전력 공급 투자 필요성"
+      ],
+      "weakening_conditions": [
+        "납기 단축",
+        "수주 취소",
+        "증설 후 공급 정상화",
+        "영업마진 하락"
+      ]
+    },
+    {
+      "theme": "초단기 금리·머니마켓",
+      "representative_etf": {
+        "name": "KODEX 머니마켓액티브",
+        "ticker": "488770"
+      },
+      "start_view": "높은 정책금리와 변동성 구간의 대기자금 완충",
+      "end_view": "주식 반등에도 글로벌 긴축과 국내 금리 부담이 남아 완충 역할은 유지",
+      "change": "STABLE",
+      "added_evidence": [
+        "Fed·BOJ 긴축 지속"
+      ],
+      "weakening_conditions": [
+        "기준금리의 빠른 하락",
+        "단기금리 스프레드 축소",
+        "신용·유동성 스트레스"
+      ]
+    },
+    {
+      "theme": "배당성장·달러 노출",
+      "representative_etf": {
+        "name": "SOL 미국배당다우존스",
+        "ticker": "446720"
+      },
+      "start_view": "현금흐름과 배당의 상대적 방어 역할",
+      "end_view": "방어 역할은 유지되지만 높은 장기금리와 환율 방향성이 성과를 좌우할 수 있어 무위험 대체재로 볼 수 없음",
+      "change": "STABLE",
+      "added_evidence": [
+        "장기금리 고점 완화와 원/달러 상승의 상반된 신호"
+      ],
+      "weakening_conditions": [
+        "구성종목 이익·배당 성장 둔화",
+        "장기금리 고착",
+        "원화 강세 전환 시 환노출 역풍"
+      ]
+    }
+  ],
+  "risks": [
+    {
+      "risk": "에너지 공급 충격·고유가",
+      "status": "EASING_BUT_ELEVATED",
+      "change": "9/15 고점 이후 9/18까지 유가 하락으로 단기 압력 완화",
+      "linked_narratives": [
+        "N1",
+        "N4"
+      ],
+      "check_indicators": [
+        "Brent/WTI",
+        "중동 공급차질",
+        "운송·보험비용"
+      ]
+    },
+    {
+      "risk": "장기금리·추가 긴축",
+      "status": "ELEVATED",
+      "change": "미 10년물은 5% 아래로 내려왔지만 Fed·BOJ 긴축으로 구조적 부담은 유지",
+      "linked_narratives": [
+        "N1"
+      ],
+      "check_indicators": [
+        "미 10년물",
+        "Fed 추가 인상 기대",
+        "글로벌 중앙은행 가이던스"
+      ]
+    },
+    {
+      "risk": "원/달러 상승",
+      "status": "STRENGTHENING",
+      "change": "9/18 1,383.3원, 7거래일 연속 상승",
+      "linked_narratives": [
+        "N1",
+        "N4"
+      ],
+      "check_indicators": [
+        "원/달러",
+        "외국인 수급",
+        "수입물가"
+      ]
+    },
+    {
+      "risk": "AI CAPEX 둔화·밸류에이션",
+      "status": "STABLE",
+      "change": "수요 근거는 유지되지만 CAPEX 지속성에 대한 경계가 상쇄",
+      "linked_narratives": [
+        "N2",
+        "N3"
+      ],
+      "check_indicators": [
+        "주요 클라우드 CAPEX",
+        "이익 추정치",
+        "HBM 가격·재고"
+      ]
+    },
+    {
+      "risk": "전력기기 공급 정상화·종목 집중",
+      "status": "STRENGTHENING",
+      "change": "산업 수요 강화와 동시에 증설·밸류에이션·집중도 위험을 더 명확히 반영",
+      "linked_narratives": [
+        "N3"
+      ],
+      "check_indicators": [
+        "납기",
+        "수주잔고",
+        "수주마진",
+        "증설 계획",
+        "원자재 가격"
+      ]
+    },
+    {
+      "risk": "취약차주·고부채 내수 압력",
+      "status": "STABLE",
+      "change": "국내 금리와 생산자물가 부담은 유지되지만 전면적 경기침체로 해석할 근거는 부족",
+      "linked_narratives": [
+        "N1"
+      ],
+      "check_indicators": [
+        "연체율",
+        "가계대출 금리",
+        "소비",
+        "생산자물가의 소비자물가 전가"
+      ]
+    }
+  ],
+  "revised_views": [
+    {
+      "initial_view": "유가와 금리 재상승이 시장을 일방적으로 지배할 가능성",
+      "revised_view": "할인율 부담은 유지되지만 유가·미 장기금리가 단기 진정되고 주가가 반등하면서, 거시 충격만으로 시장을 설명하기보다 실적·수주·설비투자에 따른 차별화를 함께 봐야 한다는 쪽으로 수정",
+      "evidence": [
+        "9/17 글로벌 주가 반등",
+        "9/18 코스피 +2.66%",
+        "유가·미 장기금리 고점 후퇴"
+      ]
+    },
+    {
+      "initial_view": "AI 수요 확대를 광범위한 성장 테마로 연결",
+      "revised_view": "HBM·전력설비처럼 실제 공급병목과 실적 연결 근거가 있는 영역을 우선하고, AI 연관성만으로 직접 수혜를 단정하지 않는 방향으로 정교화",
+      "evidence": [
+        "HBM 공급 제약",
+        "전력기기 납기",
+        "AI CAPEX 둔화 경계"
+      ]
+    },
+    {
+      "initial_view": "전력 인프라 공급부족을 단순 수혜 논리로 해석",
+      "revised_view": "수요·병목 근거는 강화됐지만 증설 이후 공급 정상화, 수주마진, 원자재, 종목 집중도와 높은 가격 수준을 동시에 추적해야 하는 양면적 가설로 수정",
+      "evidence": [
+        "전력·냉각 수요 확대",
+        "증설·밸류에이션 위험 병기"
+      ]
+    }
+  ],
+  "next_week_watchlist": [
+    {
+      "topic": "유가·미 장기금리",
+      "current_thesis": "거시 압력은 높지만 9/18 현재 추가 충격은 완화",
+      "maintain_condition": "유가와 미 10년물이 최근 고점 아래에서 안정되고 물가 기대가 재가속하지 않음",
+      "strengthen_condition": "유가가 9/15 고점권을 재시험하거나 미 10년물이 다시 5%를 뚜렷하게 상회",
+      "weaken_condition": "공급차질 완화와 함께 유가·장기금리가 추가 하락하되 경기·이익 전망이 훼손되지 않음",
+      "indicators": [
+        "Brent/WTI",
+        "미 10년물",
+        "기대인플레이션",
+        "Fed 발언"
+      ]
+    },
+    {
+      "topic": "AI 반도체·HBM",
+      "current_thesis": "실수요와 공급제약은 유지되지만 CAPEX·밸류에이션 확인 필요",
+      "maintain_condition": "주요 AI 설비투자 계획이 유지되고 HBM 수급 긴장이 지속",
+      "strengthen_condition": "CAPEX 상향, HBM 가격·주문 증가, 이익 추정치 상향이 함께 확인",
+      "weaken_condition": "CAPEX 축소와 HBM 공급 정상화·가격 둔화가 동시에 확인",
+      "indicators": [
+        "클라우드 CAPEX",
+        "HBM 계약가격",
+        "DRAM 재고",
+        "수율·증설",
+        "이익 추정치"
+      ]
+    },
+    {
+      "topic": "AI 전력·송배전 인프라",
+      "current_thesis": "데이터센터 수요가 전력설비 병목과 정책 투자로 확산",
+      "maintain_condition": "수주·납기·마진이 현재 높은 수준을 유지",
+      "strengthen_condition": "신규 대형 수주나 실제 전력망 발주, 데이터센터 전력 프로젝트가 추가 확인",
+      "weaken_condition": "납기 단축과 수주 취소, 마진 하락이 동시에 나타남",
+      "indicators": [
+        "수주잔고",
+        "납기",
+        "영업마진",
+        "증설",
+        "구리·전기강판 가격"
+      ]
+    },
+    {
+      "topic": "국내 비용·금융취약성",
+      "current_thesis": "전면적 침체보다 고금리·고환율의 비대칭 압력",
+      "maintain_condition": "내수 회복이 이어지는 가운데 취약부문 연체만 제한적으로 상승",
+      "strengthen_condition": "원/달러·대출금리·연체율이 동시에 상승하고 소비 둔화가 확인",
+      "weaken_condition": "환율·금리 안정과 함께 소비·신용지표가 견조",
+      "indicators": [
+        "원/달러",
+        "가계·기업 대출금리",
+        "연체율",
+        "소매판매",
+        "CPI/PPI"
+      ]
+    }
+  ],
+  "statistics": {
+    "raw_references": 63,
+    "unique_references": 48,
+    "raw_articles": 26,
+    "unique_articles": 22,
+    "unique_events": 14,
+    "article_count_basis": "언론사·통신사 URL만 article로 분류. 중앙은행·정부·거래소·운용사 등 공식자료는 evidence reference로 별도 집계.",
+    "article_dedup_rule": "URL 우선, URL이 없으면 source + normalized title",
+    "event_dedup_rule": "서로 다른 기사가 동일한 정책결정·가격변화·산업수요·시장반응을 설명할 경우 하나의 Event로 통합"
+  },
+  "methodology": {
+    "principle": "기사 빈도보다 최종 시장 판단의 변화와 독립 근거의 누적을 추적",
+    "narrative_statuses": [
+      "NEW",
+      "STRENGTHENING",
+      "STABLE",
+      "WEAKENING",
+      "REVERSAL"
+    ],
+    "narrative_strength_components": [
+      "Coverage",
+      "Evidence",
+      "Importance",
+      "Continuity",
+      "Recency"
+    ],
+    "caveat": "이번 결과는 전체 14개 슬롯 중 3개 Final Daily만 존재하는 부분 주간 테스트이므로 Narrative 강도와 주간 대비 변화는 잠정적임."
+  },
+  "references": [
+    {
+      "title": "Federal Reserve - 2026.09.16 FOMC Statement",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm"
+    },
+    {
+      "title": "Reuters - 9/17 글로벌 시장: 주가 반등·미 국채금리 후퇴",
+      "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-09-17/"
+    },
+    {
+      "title": "Reuters - 9/18 국제유가 업데이트",
+      "url": "https://www.reuters.com/business/energy/oil-prices-fall-1-hopes-limited-supply-disruptions-2026-09-18/"
+    },
+    {
+      "title": "Reuters - BOJ 1.25% 인상",
+      "url": "https://www.reuters.com/world/asia-pacific/boj-raises-interest-rates-31-year-high-widely-expected-move-2026-09-18/"
+    },
+    {
+      "title": "연합뉴스 - 9/18 코스피 6,894.23 마감",
+      "url": "https://en.yna.co.kr/view/AEN20260918007351320"
+    },
+    {
+      "title": "한국은행 - 2026.08.27 통화정책방향",
+      "url": "https://www.bok.or.kr/portal/bbs/P0000559/view.do?depth=201150&menuNo=200690&nttId=11064191&oldMenuNo=201150&pageIndex=1&pageUnit=10&programType=newsData&searchCnd=1"
+    },
+    {
+      "title": "Reuters - HBM 공급부족과 AI 칩 비용",
+      "url": "https://www.reuters.com/world/asia-pacific/chinas-ai-chipmakers-raise-prices-high-bandwidth-memory-shortage-bites-2026-09-10/"
+    },
+    {
+      "title": "Reuters - AI CAPEX 지속성 경계",
+      "url": "https://www.reuters.com/legal/transactional/investors-nervous-about-ai-spending-slowdown-after-industry-warnings-2026-09-15/"
+    },
+    {
+      "title": "Reuters - 미국 전력망 장비 부족",
+      "url": "https://www.reuters.com/business/energy/us-power-companies-scramble-secure-equipment-surging-data-center-demand-strains-2026-07-09/"
+    },
+    {
+      "title": "Reuters - 데이터센터 전력·냉각 인프라 수요",
+      "url": "https://www.reuters.com/business/energy/not-just-nvidia-these-power-cooling-firms-are-riding-trillion-dollar-data-centre-2026-09-01/"
+    },
+    {
+      "title": "연합뉴스 - 8월 생산자물가",
+      "url": "https://www.yna.co.kr/view/AKR20260917177300002"
+    },
+    {
+      "title": "대한민국 정책브리핑·산업통상부 - 석유제품 수급 점검",
+      "url": "https://admin2.korea.kr/briefing/pressReleaseView.do?gubun=pressRelease&newsId=156781966&pageIndex=1&repCode=A00015"
+    }
+  ]
+}
