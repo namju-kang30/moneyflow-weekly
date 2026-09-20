@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Moneyflow 주간 시장 분석 - 금리는 높았고, 돈은 실적을 골랐다 [2026-W38]</title>
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"/>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family:'Pretendard',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  background:#f1f5f9;color:#1e293b;line-height:1.85;padding:30px 15px;
+}
+.container{max-width:900px;margin:0 auto}
+.review-note{
+  background:#fff7ed;border:1px solid #fed7aa;color:#9a3412;
+  padding:12px 16px;border-radius:10px;margin-bottom:16px;font-size:14px;font-weight:700;
+}
+.toolbar{
+  background:#0f172a;color:#fff;padding:16px 24px;border-radius:12px;margin-bottom:24px;
+  display:flex;justify-content:space-between;align-items:center;box-shadow:0 4px 14px rgba(0,0,0,.12);
+}
+.toolbar-info h2{font-size:17px;font-weight:700;margin-bottom:4px;color:#38bdf8}
+.toolbar-info p{font-size:13px;color:#94a3b8}
+.toolbar-actions{display:flex;gap:10px;align-items:center}
+.copy-btn{
+  background:#03c75a;color:#fff;border:none;border-radius:8px;padding:12px 22px;font-size:15px;
+  font-weight:700;cursor:pointer;transition:all .2s ease;display:flex;align-items:center;gap:8px;
+}
+.copy-btn:hover{background:#02b350;transform:translateY(-1px)}
+.copy-btn:active{transform:translateY(1px)}
+.copy-tags-btn{background:#0284c7}
+.copy-tags-btn:hover{background:#0369a1}
+#post-content{
+  background:#fff;padding:48px;border-radius:16px;box-shadow:0 4px 20px rgba(0,0,0,.05);
+  border:1px solid #e2e8f0;
+}
+h1{font-size:26px;font-weight:800;color:#0f172a;line-height:1.45;margin-bottom:24px;padding-bottom:18px;border-bottom:3px solid #03c75a}
+h2{font-size:21px;font-weight:700;color:#1e293b;margin-top:40px;margin-bottom:18px;padding-left:14px;border-left:5px solid #03c75a}
+h3{font-size:18px;font-weight:700;color:#334155;margin-top:26px;margin-bottom:12px}
+p{margin-bottom:9px;font-size:16px;word-break:keep-all}
+table{width:100%;border-collapse:collapse;margin:24px 0;font-size:15px;border:1px solid #cbd5e1}
+th{background:#f1f5f9;color:#0f172a;font-weight:700;padding:13px 14px;border:1px solid #cbd5e1;text-align:left}
+td{padding:12px 14px;border:1px solid #cbd5e1;color:#334155;vertical-align:top;line-height:1.65;word-break:keep-all}
+tr:nth-child(even){background:#f8fafc}
+ul,ol{margin-left:24px;margin-bottom:18px}
+li{margin-bottom:9px;font-size:16px;line-height:1.75}
+strong{color:#0f172a;font-weight:700}
+hr{border:none;border-top:1px solid #e2e8f0;margin:36px 0}
+.lead{
+  font-size:18px;line-height:1.8;color:#0f172a;font-weight:650;margin:16px 0 20px;
+}
+.card{
+  border:1px solid #e2e8f0;border-radius:10px;padding:17px 18px;margin:14px 0;background:#fff;
+}
+.card h3{margin:0 0 8px;font-size:17px;color:#0f172a}
+.card p{font-size:15px;color:#334155;margin:5px 0}
+.card .state{font-size:13px;font-weight:800;color:#047857;margin-left:8px}
+.callout{padding:16px 18px;margin:18px 0;border-radius:8px;border:1px solid #e2e8f0}
+.callout-green{background:#f0fdfa;border-left:4px solid #0f766e}
+.callout-blue{background:#eff6ff;border-left:4px solid #0369a1}
+.callout-amber{background:#fffbeb;border-left:4px solid #b45309}
+.callout-red{background:#fef2f2;border-left:4px solid #b91c1c}
+.callout-title{font-size:15px;font-weight:800;margin:0 0 7px}
+.callout-green .callout-title{color:#0f766e}
+.callout-blue .callout-title{color:#0369a1}
+.callout-amber .callout-title{color:#b45309}
+.callout-red .callout-title{color:#b91c1c}
+.callout p{font-size:15px;line-height:1.8;color:#334155;margin:0}
+.quote-line{
+  font-size:19px;line-height:1.7;color:#0f172a;font-weight:750;
+  padding:18px 20px;background:#f8fafc;border-left:4px solid #03c75a;border-radius:0 10px 10px 0;margin:18px 0;
+}
+.muted{font-size:13px;color:#64748b;line-height:1.65}
+.source-link{font-size:13px;line-height:1.65;color:#64748b;margin:4px 0}
+.source-link a{color:#0369a1;text-decoration:underline}
+#toast{
+  visibility:hidden;min-width:340px;background:#0f172a;color:#fff;text-align:center;border-radius:8px;
+  padding:16px 24px;position:fixed;z-index:1000;bottom:30px;left:50%;transform:translateX(-50%);
+  box-shadow:0 4px 16px rgba(0,0,0,.25);font-size:15px;font-weight:600;border-left:4px solid #03c75a;
+}
+#toast.show{visibility:visible;animation:fadein .3s,fadeout .3s 2.7s}
+@keyframes fadein{from{bottom:0;opacity:0}to{bottom:30px;opacity:1}}
+@keyframes fadeout{from{bottom:30px;opacity:1}to{bottom:0;opacity:0}}
+@media(max-width:760px){
+  body{padding:16px 8px}
+  .toolbar{flex-direction:column;align-items:flex-start;gap:12px}
+  .toolbar-actions{width:100%}
+  .copy-btn{flex:1;justify-content:center;padding:11px 10px}
+  #post-content{padding:28px 18px}
+  h1{font-size:23px} h2{font-size:19px}
+  table{font-size:13px} th,td{padding:10px 9px}
+}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="toolbar">
+    <div class="toolbar-info">
+      <h2>⚡ 네이버 블로그 원클릭 복사 도우미</h2>
+      <p>본문 서식과 발행용 추천 해시태그를 원클릭으로 복사할 수 있습니다.</p>
+    </div>
+    <div class="toolbar-actions">
+      <button class="copy-btn copy-tags-btn" onclick="copyHashtags()">🏷️ 태그(30개) 복사</button>
+      <button class="copy-btn" onclick="copyPostContent()">📋 본문 서식 복사하기</button>
+    </div>
+  </div>
+  <div id="post-content"><h1>Moneyflow 주간 시장 분석 - 금리는 높았고, 돈은 실적을 골랐다 [2026-W38]</h1><p><strong>분석 범위:</strong> 2026년 9월 17일~20일</p><p class="muted">이번 주는 거래일 기준으로는 9월 18일이 마지막 국내 시장가격입니다. 19~20일의 주말 뉴스는 다음 거래일에 실제 가격 반응이 나타나는지 따로 확인합니다.</p><hr/><h2>①. 이번 주 시장을 관통하는 한 문장</h2><div class="quote-line">고금리와 100달러대 유가가 계속 시장을 누르는 가운데, 반도체와 전력 인프라처럼 실제 수요와 실적 연결고리가 보이는 영역으로 자금이 더 선별적으로 움직였습니다.</div><p>금리는 내려오지 않았습니다. 그런데 주가는 올랐습니다. 이번 주의 핵심은 이 간극입니다.</p><p>9월 18일 코스피는 2.66% 반등했지만 미국 10년물 국채 수익률은 5% 부근으로 다시 올라왔고 원/달러도 1,380원대를 유지했습니다. 거시 환경이 편해져서 오른 장이라기보다, 높은 자본비용을 감당할 만한 이익과 수요가 있는 업종으로 매수세가 압축된 장에 가까웠습니다.</p><hr/><h2>②. 주간 시장 핵심 현황</h2><div style="overflow-x:auto;"><table><thead><tr><th>구분</th><th>이번 주에 확인된 변화</th><th>해석</th></tr></thead><tbody><tr><td>금리·유가</td><td>미 10년물 5% 부근, 브렌트유 105달러 안팎</td><td>할인율과 비용 부담은 여전히 높음</td></tr><tr><td>한국 증시</td><td>9/18 코스피 6,894.23, +2.66%</td><td>반도체 중심으로 위험선호가 빠르게 회복</td></tr><tr><td>환율</td><td>9/18 원/달러 1,383.3원</td><td>주가 반등과 달리 금융여건이 전반적으로 완화된 것은 아님</td></tr><tr><td>반도체</td><td>HBM 수요, 외국인 매수, 상용 서비스 근거 추가</td><td>실적 확인형 투자 가설이 한 단계 강해짐</td></tr><tr><td>전력 인프라</td><td>전력망 병목·데이터센터 전력/냉각 수요 지속</td><td>AI 투자가 전력·냉각 설비로 확산되는 흐름 유지</td></tr><tr><td>자금·신용</td><td>정기예금 이동과 저신용 자영업 연체 문제 부각</td><td>고금리의 영향이 자산가격 밖으로 넓어짐</td></tr></tbody></table></div><hr/><h2>③. 지난주와 무엇이 달라졌나</h2><div class="callout callout-blue"><p class="callout-title">전주 비교</p><p>이전 주간 확정본이 아직 없어 전주와의 정식 비교는 생략합니다. 이번 리포트부터 다음 주 사후검증의 기준점으로 사용합니다.</p></div><hr/><h2>④. 핵심 시장 흐름</h2><div class="card"><h3>1) 높은 금리와 에너지 비용은 사라지지 않았다<span class="state">유지</span></h3><p>미 연준의 9월 금리 인상 이후 미국 10년물 국채 수익률은 9월 17일 4.94%에서 18일 5.01%로 다시 올라왔습니다. 브렌트유도 주말 직전 104.87달러로 100달러대를 유지했습니다. 시장이 느끼는 자본비용 상단은 여전히 높습니다.</p><p><strong>확인할 점:</strong> 유가 공급위험 완화와 장기금리 하락이 함께 나타나는지, 반대로 다시 급등해 업종 구분 없는 매도로 번지는지</p></div><div class="card"><h3>2) 반도체는 ‘AI 기대’보다 숫자가 중요해졌다<span class="state">강화</span></h3><p>HBM 공급 제약이라는 기존 근거에 9월 18일 반도체 중심 주가 반등, 외국인 수급, 국산 NPU 상용 서비스 등 추가 근거가 붙었습니다. 다만 중국 메모리 공급 확대와 5% 안팎의 장기금리는 같은 방향의 낙관을 막는 변수입니다.</p><p><strong>확인할 점:</strong> AI 설비투자, HBM·DRAM 가격, 중국 공급능력, 삼성전자·SK하이닉스 이익추정치</p></div><div class="card"><h3>3) AI 투자 흐름은 전력·냉각·송배전으로 더 넓어졌다<span class="state">강화</span></h3><p>데이터센터는 칩만으로 돌아가지 않습니다. 변압기·케이블·배전설비와 냉각장비, 발전원 확보가 함께 필요합니다. 이번 주에는 미국 전력망 장비 부족, 데이터센터 전력·냉각 수요, 국내 냉각장비 제품, 미국 발전·원전 프로젝트 논의가 같은 방향의 근거로 쌓였습니다.</p><p><strong>확인할 점:</strong> 실제 착공과 전력연계 일정, 신규 수주, 납기, 수주마진. 산업 성장과 주가의 추가 상승여력은 별개</p></div><div class="card"><h3>4) 고금리의 부담이 ‘자금 이동’과 ‘신용 양극화’로 드러나기 시작했다<span class="state">신규</span></h3><p>정기예금 잔액 증가와 저신용 자영업자의 높은 연체율, 대부업권 채무조정 부동의율이 주 후반 새롭게 부각됐습니다. 다만 예금 증가분의 상당 부분이 기업자금이어서 이를 개인 투자자의 대규모 증시 이탈로 해석하기는 어렵습니다.</p><p><strong>확인할 점:</strong> 개인 예금·머니마켓 자금까지 같은 방향으로 움직이는지, 연체율 상승이 은행권 대손비용으로 전이되는지</p></div><hr/><h2>⑤. 핵심 흐름 변화표</h2><div style="overflow-x:auto;"><table><thead><tr><th>시점</th><th>고금리·고유가</th><th>AI 반도체</th><th>AI 전력 인프라</th><th>자금·신용</th></tr></thead><tbody><tr><td>9/17 오전</td><td>등장</td><td>등장</td><td>등장</td><td>-</td></tr><tr><td>9/18 오전</td><td>유지</td><td>유지</td><td>유지</td><td>-</td></tr><tr><td>9/18 오후</td><td>유지</td><td>강화</td><td>강화</td><td>-</td></tr><tr><td>9/19 오전</td><td>유지</td><td>강화</td><td>강화</td><td>-</td></tr><tr><td>9/19 오후</td><td>유지</td><td>유지</td><td>유지</td><td>-</td></tr><tr><td>9/20 오전</td><td>유지</td><td>유지</td><td>강화</td><td>등장</td></tr><tr><td>9/20 오후</td><td>유지</td><td>강화</td><td>강화</td><td>강화</td></tr></tbody></table></div><hr/><h2>⑥. 이번 주 시장 해석을 바꾼 핵심 사건</h2><p><strong>미 연준의 금리 인상.</strong> 시장의 출발점은 다시 높은 할인율이 됐습니다. 이후 주가가 반등했기 때문에 오히려 ‘금리 하나로 시장 전체를 설명할 수 없다’는 점이 더 분명해졌습니다.</p><p><strong>사우디 동서 송유관 차질과 호르무즈 제약.</strong> WTI는 일부 내려왔지만 브렌트유는 105달러 부근을 지켰습니다. 에너지 위험은 해소가 아니라 높은 수준의 지속에 가깝습니다.</p><p><strong>9월 18일 반도체 중심 코스피 급반등.</strong> 같은 날 장기금리와 환율 부담이 남아 있었기 때문에, 시장은 거시 완화보다 업종별 이익과 수급 차이를 더 강하게 반영한 것으로 볼 수 있습니다.</p><p><strong>중국 메모리 공급 확대 움직임.</strong> AI 반도체 가설에 가장 중요한 반대 근거가 새로 붙었습니다. 수요가 강해도 공급이 더 빨리 늘면 가격과 마진은 달라집니다.</p><p><strong>한미 대미 투자 패키지의 세부 프로젝트 논의.</strong> 3,500억달러 패키지 가운데 1,500억달러는 조선 분야에 배정돼 있고, 나머지 전략투자 세부안에는 미국 가스발전·원전 프로젝트 등이 논의되고 있습니다. 아직 지분구조·보증·현지조달 조건이 확정되지 않았기 때문에 ‘수혜 확정’이 아니라 실제 계약구조를 확인해야 할 정책 변수입니다.</p><p><strong>정기예금 증가와 취약신용 지표.</strong> 고금리가 주식 밸류에이션뿐 아니라 기업의 단기자금 운용과 저신용 차주의 현금흐름까지 건드리고 있다는 신호입니다.</p><hr/><h2>⑦. 시장가격으로 확인한 주간 가설</h2><div style="overflow-x:auto;"><table><thead><tr><th>변수</th><th>9/17</th><th>9/18</th><th>읽어야 할 점</th></tr></thead><tbody><tr><td>코스피</td><td>6,715.41</td><td>6,894.23 (+2.66%)</td><td>반도체 중심으로 위험선호가 회복</td></tr><tr><td>원/달러</td><td>1,382.2원</td><td>1,383.3원</td><td>주가 반등과 달리 원화 금융여건은 개선되지 않음</td></tr><tr><td>미 10년물 국채</td><td>4.94%</td><td>5.01%</td><td>주가 반등을 금리 하락만으로 설명할 수 없음</td></tr><tr><td>브렌트유</td><td>104.82달러</td><td>104.87달러</td><td>주말 직전까지 에너지 위험 프리미엄 유지</td></tr><tr><td>WTI</td><td>101.91달러</td><td>100.30달러</td><td>일부 하락했지만 여전히 100달러 안팎</td></tr></tbody></table></div><p>미국 시장에서도 비슷한 차별화가 보였습니다. 9월 18일로 끝난 한 주에 나스닥은 반도체 강세로 상승했지만 S&P500은 거의 보합, 다우는 약세였습니다. ‘위험자산 전체가 좋아졌다’기보다 기술·반도체 쪽으로 힘이 몰렸다는 해석과 맞습니다.</p><hr/><h2>⑧. 투자 가설 변화 추적</h2><div style="overflow-x:auto;"><table><thead><tr><th>투자 주제</th><th>이번 주 판단</th><th>무엇이 달라졌나</th><th>깨지는 조건</th></tr></thead><tbody><tr><td>국내 반도체·HBM</td><td>강화</td><td>HBM 수요에 가격 반응·외국인 수급·상용화 근거가 추가</td><td>설비투자 축소, 메모리 가격 하락, 중국 공급 확대, 이익추정치 하향</td></tr><tr><td>AI 전력·냉각·송배전</td><td>강화</td><td>전력망 병목에서 냉각·발전·원전 프로젝트까지 실물 경로 확대</td><td>전력연계 지연, 신규수주 둔화, 납기 단축, 마진 하락</td></tr><tr><td>머니마켓·초단기 자금</td><td>유지</td><td>예금·단기자금 이동으로 금리 민감도가 재확인</td><td>단기금리 급락 또는 신용·유동성 위험 확대</td></tr><tr><td>배당성장·달러 노출</td><td>유지</td><td>새로운 강화 근거는 제한적. 높은 장기금리와 환율이 계속 변수</td><td>구성종목 이익·배당 둔화, 장기금리 고착, 원화 강세 전환</td></tr><tr><td>자동차</td><td>관찰</td><td>주말 Daily에서 판매·신차 자료가 추가됐지만 주간 흐름으로 보기엔 아직 짧음</td><td>판매 기대 미달, 인센티브 확대, 믹스 개선이 이익률로 이어지지 않는 경우</td></tr></tbody></table></div><hr/><h2>⑨. 위험 요인 추적</h2><p><strong>금리:</strong> 가장 직접적인 할인율 변수입니다. 9월 18일 미 10년물 공식 일일 수익률이 5.01%로 다시 올라왔습니다. 반도체·전력 인프라의 실적 가설이 맞더라도 멀티플에는 부담입니다.</p><p><strong>에너지:</strong> WTI가 조금 내려왔다고 공급위험이 끝난 것은 아닙니다. 브렌트유는 105달러 부근을 유지했고 호르무즈와 사우디 공급경로 불확실성도 남아 있습니다.</p><p><strong>중국 메모리 공급:</strong> 이번 주 새로 커진 반대 변수입니다. HBM·고부가 메모리 수요와 별개로 범용 메모리 공급이 늘면 업황의 폭과 가격 경로가 달라질 수 있습니다.</p><p><strong>취약신용:</strong> 저신용 자영업자 연체율은 높은 수준입니다. 다만 대출규모가 작고 등급 이동에 따라 변동폭이 큰 구간이므로 금융권 전체 신용위기로 확대 해석하지 않습니다.</p><p><strong>전력 인프라의 실행 위험:</strong> 전력수요가 늘어도 데이터센터 착공, 계통연계, 장비 발주, 제조사 수주와 마진으로 이어져야 실제 실적이 됩니다.</p><hr/><h2>⑩. 지난주 점검 항목 사후검증</h2><div class="callout callout-blue"><p class="callout-title">이번 주는 기준점 설정</p><p>이전 주간 확정본이 없기 때문에 사후검증할 조건도 없습니다. 아래 ⑫의 조건부터 다음 주에 실제 결과와 대조합니다.</p></div><hr/><h2>⑪. 이번 주 수정된 시각</h2><p><strong>첫째, 코스피 반등을 ‘금리 완화’로 설명하지 않습니다.</strong> 금리는 오히려 다시 5% 부근으로 올라왔습니다. 이번 반등에서는 반도체 실적 기대와 수급의 설명력이 더 컸습니다.</p><p><strong>둘째, 유가가 주 후반 크게 진정됐다는 표현도 버렸습니다.</strong> WTI는 하락했지만 브렌트유는 9월 17일과 18일 거의 같은 수준이었습니다.</p><p><strong>셋째, 예금 증가는 ‘개인의 증시 이탈’이 아닙니다.</strong> 기업자금 비중이 높았습니다. 지금 확인되는 것은 안전자산 쏠림보다 금리에 민감해진 자금의 재배치입니다.</p><p><strong>넷째, 일본은행 인상을 곧바로 엔 캐리 청산과 연결하지 않습니다.</strong> 인상 직후에도 엔화 약세가 이어졌고, 시장이 받는 실제 조달충격은 추가 가격자료가 필요합니다.</p><hr/><h2>⑫. 다음 주 점검 항목</h2><div style="overflow-x:auto;"><table><thead><tr><th>점검 주제</th><th>현재 판단</th><th>유지 조건</th><th>강해지는 조건</th><th>깨지는 조건</th></tr></thead><tbody><tr><td>고금리 속 선별 장세</td><td>거시 부담은 높지만 실적이 있는 업종으로 매수 집중</td><td>금리·유가가 높은 수준에서 안정되고 이익 전망 유지</td><td>반도체·전력 인프라의 수주·이익추정치 추가 개선</td><td>금리·유가 급등으로 업종 구분 없는 위험회피 또는 거시 완화로 시장 전반 재평가</td></tr><tr><td>AI 반도체</td><td>수요 근거 강화, 공급·밸류에이션 위험 공존</td><td>AI 설비투자와 HBM 수요 유지</td><td>출하·가격·이익추정치가 함께 상향</td><td>설비투자 축소 + 메모리 가격 하락 + 중국 공급 확대</td></tr><tr><td>AI 전력 인프라</td><td>전력·냉각·송배전까지 투자 경로 확대</td><td>착공·전력연계·수주·마진 유지</td><td>신규 대형수주와 실제 전력망·발전 프로젝트 계약</td><td>전력연계 지연 + 수주 둔화 + 납기 단축 + 마진 하락</td></tr><tr><td>대미 투자 패키지</td><td>프로젝트 후보는 구체화됐지만 계약조건은 미확정</td><td>지분·보증·현지조달 조건이 기업 수익성을 훼손하지 않는 범위에서 확정</td><td>한국 기업의 실제 수주·지분 참여와 수익구조가 구체화</td><td>보증부담 확대, 낮은 수익배분, 현지조달 조건으로 국내 기업 경제성 악화</td></tr><tr><td>자금·취약신용</td><td>금리 민감 자금 이동과 취약차주 스트레스 부각</td><td>예금 이동은 이어져도 시스템 신용경색은 발생하지 않음</td><td>개인 자금 이동과 연체·대손비용이 함께 확대</td><td>기업 일시자금 이동으로 끝나고 신용지표 안정</td></tr><tr><td>9/20 주말 지정학 사건</td><td>두 차례 단거리 탄도미사일 발사 사실은 확인됐지만 국내 시장가격에는 미반영</td><td>다음 거래일 원화·국채·외국인 수급 반응이 제한적</td><td>원화 약세·외국인 매도·위험 프리미엄이 동시에 확대</td><td>추가 긴장 없이 가격 반응이 빠르게 소멸</td></tr></tbody></table></div><hr/><h2>⑬. 종합 결론</h2><p>이번 주 시장은 의외로 단순했습니다. <strong>돈이 싼 시장은 아니었지만, 돈이 갈 곳은 더 선명해졌습니다.</strong></p><p>미국 10년물은 다시 5% 부근으로 올라왔고 브렌트유도 105달러 안팎을 유지했습니다. 그 와중에 코스피가 2.66% 오른 것은 거시 부담이 끝났다는 신호가 아닙니다. 반도체처럼 실적 기대가 붙고 수급이 들어오는 업종에는 높은 할인율을 감수하려는 매수세가 있었다는 뜻에 가깝습니다.</p><p>전력 인프라도 같은 기준으로 봐야 합니다. 데이터센터 전력수요는 분명하지만, 실제 투자는 착공과 계통연계, 장비 발주, 수주와 마진을 거쳐야 실적으로 남습니다. 대미 투자 패키지도 프로젝트 이름보다 계약구조가 더 중요합니다.</p><p>한편 주 후반에 나온 예금 이동과 취약신용 지표는 다음 단계의 질문을 던집니다. 높은 금리가 주가의 할인율 문제를 넘어 실물경제의 현금흐름과 신용비용까지 얼마나 깊게 파고드는가. 다음 주에는 이 부분을 반도체·전력 인프라의 실적 가설과 함께 보겠습니다.</p><div class="callout callout-red"><p class="callout-title">투자 유의사항</p><p>본 자료는 공개된 시장자료를 바탕으로 작성한 일반적 시장분석입니다. 특정 금융상품의 매수·매도를 권유하거나 수익을 보장하지 않습니다. 산업 성장성과 기업 이익, 시장 기대, 현재 가격은 서로 다른 단계이며 금리·환율·원자재·유동성 변화에 따라 자산가격은 다르게 움직일 수 있습니다.</p></div><hr/><h2>⑭. 주요 참고자료</h2><p class="source-link"><a href="https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value_month=202609&amp;type=daily_treasury_yield_curve" target="_blank" rel="noopener noreferrer">미 재무부 - 2026년 9월 일일 국채 수익률</a></p><p class="source-link"><a href="https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm" target="_blank" rel="noopener noreferrer">미 연준 - 2026년 9월 FOMC 성명</a></p><p class="source-link"><a href="https://en.yna.co.kr/view/AEN20260917007452320" target="_blank" rel="noopener noreferrer">연합뉴스 - 9월 17일 코스피 6,715.41·원/달러 1,382.2원</a></p><p class="source-link"><a href="https://en.yna.co.kr/view/AEN20260918009000320" target="_blank" rel="noopener noreferrer">연합뉴스 - 9월 18일 코스피 6,894.23·원/달러 1,383.3원</a></p><p class="source-link"><a href="https://www.reuters.com/business/energy/oil-prices-extend-losses-fears-middle-east-supply-disruptions-ease-2026-09-17/" target="_blank" rel="noopener noreferrer">Reuters - 9월 17일 브렌트유 104.82달러·WTI 101.91달러</a></p><p class="source-link"><a href="https://www.reuters.com/business/energy/oil-prices-fall-1-hopes-limited-supply-disruptions-2026-09-18/" target="_blank" rel="noopener noreferrer">Reuters - 9월 18일 브렌트유 104.87달러·WTI 100.30달러</a></p><p class="source-link"><a href="https://www.reuters.com/business/nasdaq-futures-lead-wall-st-gains-oil-retreat-eases-inflation-worries-2026-09-18/" target="_blank" rel="noopener noreferrer">Reuters - 9월 18일 미국 증시·반도체 중심 주간 차별화</a></p><p class="source-link"><a href="https://www.reuters.com/world/asia-pacific/boj-raises-interest-rates-31-year-high-widely-expected-move-2026-09-18/" target="_blank" rel="noopener noreferrer">Reuters - 일본은행 1.25% 금리 인상</a></p><p class="source-link"><a href="https://www.reuters.com/world/asia-pacific/chinas-ai-chipmakers-raise-prices-high-bandwidth-memory-shortage-bites-2026-09-10/" target="_blank" rel="noopener noreferrer">Reuters - HBM 공급 부족과 AI 칩 비용</a></p><p class="source-link"><a href="https://www.reuters.com/legal/transactional/investors-nervous-about-ai-spending-slowdown-after-industry-warnings-2026-09-15/" target="_blank" rel="noopener noreferrer">Reuters - AI 설비투자 지속성에 대한 시장 경계</a></p><p class="source-link"><a href="https://www.reuters.com/business/energy/us-power-companies-scramble-secure-equipment-surging-data-center-demand-strains-2026-07-09/" target="_blank" rel="noopener noreferrer">Reuters - 미국 전력망 장비 부족과 데이터센터 수요</a></p><p class="source-link"><a href="https://www.reuters.com/world/asia-pacific/chinas-cxmt-eyes-flash-memory-push-amid-global-shortage-firm-take-samsung-ymtc-2026-09-18/" target="_blank" rel="noopener noreferrer">Reuters - 중국 CXMT의 메모리 공급 확대 움직임</a></p><p class="source-link"><a href="https://www.reuters.com/business/energy/texas-power-plant-nuclear-projects-under-discussion-south-koreas-us-investment-2026-09-18/" target="_blank" rel="noopener noreferrer">Reuters - 대미 투자 패키지의 가스발전·원전 프로젝트 논의</a></p><p class="source-link"><a href="https://www.mofa.go.kr/www/brd/m_4080/list.do?company_cd=&amp;company_nm=&amp;itm_seq_1=0&amp;itm_seq_2=0&amp;multi_itm_seq=0&amp;page=1&amp;pitem=50" target="_blank" rel="noopener noreferrer">외교부 - 한미 외교장관회담(9.18.) 결과</a></p><p class="source-link"><a href="https://www.yna.co.kr/view/AKR20260919036700002" target="_blank" rel="noopener noreferrer">연합뉴스 - 저신용 자영업자 연체율</a></p><p class="source-link"><a href="https://www.mk.co.kr/news/economy/12157604" target="_blank" rel="noopener noreferrer">매일경제 - 대부업권 개인채무조정 부동의율</a></p><p class="source-link"><a href="https://www.reuters.com/world/asia-pacific/north-korea-fires-missile-off-east-coast-yonhap-says-2026-09-20/" target="_blank" rel="noopener noreferrer">Reuters - 9월 20일 북한 단거리 탄도미사일 두 차례 발사</a></p><hr/><h2>⑮. 네이버 블로그 검색 태그</h2><p>#거시경제 #주간시장 #금융시장 #미국금리 #국채금리 #국제유가 #원달러환율 #코스피 #반도체 #AI반도체 #HBM #데이터센터 #전력인프라 #전력기기 #AI인프라 #대미투자 #머니마켓 #신용위험 #자영업연체 #자금흐름 #설비투자 #수주 #밸류에이션 #ETF #반도체ETF #전력ETF #리스크관리 #시장분석 #Moneyflow #주간리포트</p></div>
+</div>
+<div id="toast">✅ 본문 서식이 복사되었습니다!</div>
+<script>
+function copyPostContent() {
+  const contentElement=document.getElementById('post-content');
+  if(navigator.clipboard&&window.ClipboardItem){
+    const htmlBlob=new Blob([contentElement.innerHTML],{type:'text/html'});
+    const textBlob=new Blob([contentElement.innerText],{type:'text/plain'});
+    navigator.clipboard.write([new ClipboardItem({'text/html':htmlBlob,'text/plain':textBlob})])
+    .then(function(){showToast('✅ 본문 서식이 복사되었습니다! 네이버 블로그 글쓰기 창에서 Ctrl+V를 누르세요.');})
+    .catch(function(){fallbackCopy(contentElement);});
+  } else {fallbackCopy(contentElement);}
+}
+function copyHashtags(){
+  const text=document.getElementById('post-content').innerText;
+  const matches=text.match(/#([가-힣a-zA-Z0-9_]+)/g);
+  if(matches&&matches.length>0){
+    const uniqueTags=Array.from(new Set(matches)).slice(0,30);
+    const tagText=uniqueTags.map(t=>t.replace('#','')).join(', ');
+    if(navigator.clipboard){
+      navigator.clipboard.writeText(tagText).then(function(){
+        showToast('🏷️ 태그 '+uniqueTags.length+'개가 복사되었습니다! 네이버 블로그 발행창의 [태그] 란에 Ctrl+V로 붙여넣으세요.');
+      }).catch(function(){fallbackCopyText(tagText);});
+    } else {fallbackCopyText(tagText);}
+  } else {showToast('복사할 해시태그를 찾지 못했습니다.');}
+}
+function fallbackCopyText(textToCopy){
+  const tempInput=document.createElement('textarea');tempInput.value=textToCopy;document.body.appendChild(tempInput);tempInput.select();
+  try{document.execCommand('copy');showToast('🏷️ 태그가 복사되었습니다!');}
+  catch(e){alert('태그 복사 실패: '+e);}document.body.removeChild(tempInput);
+}
+function fallbackCopy(contentElement){
+  const range=document.createRange();range.selectNodeContents(contentElement);const selection=window.getSelection();
+  selection.removeAllRanges();selection.addRange(range);
+  try{const ok=document.execCommand('copy');if(ok){showToast('✅ 본문 서식이 복사되었습니다!');}
+  else{alert('복사에 실패했습니다. 마우스로 직접 영역을 드래그하여 복사해 주세요.');}}
+  catch(err){alert('복사 중 오류가 발생했습니다: '+err);}selection.removeAllRanges();
+}
+function showToast(msg){
+  const toast=document.getElementById('toast');if(msg)toast.innerText=msg;toast.className='show';
+  setTimeout(function(){toast.className=toast.className.replace('show','');},3000);
+}
+</script>
+</body>
+</html>
