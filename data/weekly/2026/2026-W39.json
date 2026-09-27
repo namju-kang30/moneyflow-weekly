@@ -1,0 +1,733 @@
+{
+  "schema_version": "1.0",
+  "meta": {
+    "record_id": "2026-W39",
+    "status": "final",
+    "finalized_at": "2026-09-27T12:31:25Z",
+    "source_stage": "weekly_synthesis_from_final_daily",
+    "calendar_week_complete": true,
+    "source_complete": true,
+    "title": "Moneyflow 주간 시장 분석 - 실적은 강해졌고, 할인율은 더 높아졌다 [2026-W39]"
+  },
+  "period": {
+    "type": "weekly",
+    "id": "2026-W39",
+    "start_date": "2026-09-21",
+    "end_date": "2026-09-27",
+    "observed_start": "2026-09-21",
+    "observed_end": "2026-09-27",
+    "timezone": "Asia/Seoul"
+  },
+  "source": {
+    "daily_report_count": 14,
+    "expected_daily_report_count": 14,
+    "source_records": [
+      "2026-09-21-morning",
+      "2026-09-21-afternoon",
+      "2026-09-22-morning",
+      "2026-09-22-afternoon",
+      "2026-09-23-morning",
+      "daily_2026-09-23_afternoon",
+      "2026-09-24-morning",
+      "2026-09-24-afternoon",
+      "2026-09-25-morning",
+      "2026-09-25_afternoon",
+      "2026-09-26_morning",
+      "2026-09-26_afternoon",
+      "2026-09-27_morning",
+      "2026-09-27_afternoon"
+    ],
+    "missing_records": [],
+    "selection_rule": "meta.status == final only",
+    "source_repository": "namju-kang30/moneyflow-daily"
+  },
+  "weekly_thesis": {
+    "summary": "유가는 일부 완화됐지만 미국 장기금리는 더 상승했고, 반도체·AI 인프라는 수출·착공·프로젝트 선정·파트너십 등 실물 근거를 늘렸다. 동시에 대출심사·회사채·주거·PF 등 신용 부담이 넓어져 시장은 성장 기대보다 현금흐름과 자금조달 능력을 더 엄격하게 구분하는 국면으로 이동했다.",
+    "change_from_previous_week": "W38의 '고비용 속 실적·인프라 선별화'가 W39에서는 '장기금리 부담 강화, 에너지 부담 일부 완화, AI·반도체 실물근거 강화, 신용 부담 확산'으로 분화됐다.",
+    "key_shift": "에너지보다 장기금리가 핵심 할인율 제약으로 부상한 가운데, AI·반도체는 실물근거가 강화되고 신용·주거·PF 부담은 더 넓게 관찰됨"
+  },
+  "narratives": [
+    {
+      "narrative_id": "N1",
+      "title": "장기금리 부담 강화와 에너지 부담의 부분 완화",
+      "status": "STRENGTHENING",
+      "confidence": "high",
+      "final_view": "미국 10년물 국채 수익률은 9/18 5.01%에서 9/25 5.17%로 16bp 상승해 할인율 부담이 강화됐다. 반면 WTI는 100.30달러에서 92.41달러로 낮아져 에너지 비용 압력은 일부 완화됐다. 브렌트유는 104.32달러로 여전히 100달러를 웃돌았다.",
+      "supporting_evidence": [
+        "미 10년물 9/18 5.01% → 9/25 5.17%",
+        "주중 미 10년물 장중 5.2% 상회",
+        "WTI 9/18 100.30달러 → 9/25 92.41달러"
+      ],
+      "counter_evidence": [
+        "브렌트유 104.87달러 → 104.32달러로 높은 수준 유지",
+        "미국·한국 주식시장은 높은 금리에도 AI·반도체 중심 상승"
+      ],
+      "check_indicators": [
+        "미 10년물",
+        "연준 추가 인상 기대",
+        "미 물가·고용",
+        "WTI",
+        "Brent"
+      ],
+      "thesis_break_conditions": [
+        "미 10년물이 5% 아래로 안정되고 신용스프레드도 완화",
+        "반대로 장기금리 재급등이 업종 구분 없는 위험회피로 전이"
+      ]
+    },
+    {
+      "narrative_id": "N2",
+      "title": "AI 반도체 — 수출과 실적 근거 강화",
+      "status": "STRENGTHENING",
+      "confidence": "high",
+      "final_view": "9월 1~20일 반도체 수출은 341억달러로 전년 동기 대비 259.4% 증가했고 전체 수출의 47.8%를 차지했다. 코스피도 9/23 7,080.92로 마감해 실물과 가격 양쪽에서 근거가 강화됐다. 다만 월말 확정치와 메모리 가격, 중국 공급 확대를 계속 확인해야 한다.",
+      "supporting_evidence": [
+        "9월 1~20일 반도체 수출 341억달러, +259.4%",
+        "코스피 9/18 6,894.23 → 9/23 7,080.92",
+        "OECD의 2026년 한국 성장률 3.7% 전망과 수출·산업생산 평가"
+      ],
+      "counter_evidence": [
+        "반도체 수출 비중 47.8%로 편중 위험 확대",
+        "중국 메모리 공급 확대 가능성",
+        "미 장기금리 상승에 따른 밸류에이션 부담"
+      ],
+      "check_indicators": [
+        "9월 월간 반도체 수출",
+        "HBM·DRAM 가격",
+        "외국인 수급",
+        "주요 기업 이익추정치"
+      ],
+      "thesis_break_conditions": [
+        "월간 반도체 수출 증가율 급락",
+        "메모리 가격 하락",
+        "AI 설비투자 축소",
+        "중국 공급 확대와 이익추정치 하향"
+      ]
+    },
+    {
+      "narrative_id": "N3",
+      "title": "AI 전력·냉각·데이터센터 — 실물 투자 단계 구체화",
+      "status": "STRENGTHENING",
+      "confidence": "high",
+      "final_view": "삼성전자 HVAC 생산라인 투자, 포항 40MW AI 데이터센터 착공, 대미 전략투자 1호 텍사스 엔시날 가스복합화력발전소 추진 결정, LG전자의 엔비디아 전력·냉각 파트너 등재가 이어졌다. 다만 프로젝트 선정·파트너십과 실제 수주·마진은 분리해 판단해야 한다.",
+      "supporting_evidence": [
+        "삼성전자 광주 HVAC 생산라인 투자",
+        "현대건설 포항 40MW AI 데이터센터 착공",
+        "9/22 엔시날 가스복합화력발전소 1호 사업 추진 결정",
+        "LG전자 엔비디아 NPN Power and Cooling 파트너 등재"
+      ],
+      "counter_evidence": [
+        "데이터센터 전력연계·인허가·프로젝트 금융 지연 가능성",
+        "파트너 등재는 개별 수주 확정과 다름",
+        "높은 장기금리에 따른 프로젝트 금융비용 상승"
+      ],
+      "check_indicators": [
+        "엔시날 MOU·본계약·자금집행",
+        "데이터센터 착공·전력연계",
+        "신규수주",
+        "납기",
+        "영업마진"
+      ],
+      "thesis_break_conditions": [
+        "엔시날 본계약·자금집행 지연",
+        "데이터센터 전력연계 지연",
+        "신규수주 둔화·납기 단축",
+        "원가 상승과 마진 하락"
+      ]
+    },
+    {
+      "narrative_id": "N4",
+      "title": "신용·주거·PF 부담의 확산",
+      "status": "STRENGTHENING",
+      "confidence": "medium",
+      "final_view": "지난주의 저신용 차주 문제에서 이번 주에는 고신용 대출심사, 리볼빙, 은행 연체율, 회사채 차환, 전세 부담, PF보증까지 범위가 넓어졌다. 다만 HUG 관리대상 사업장의 다수가 정상 단계이고 금융시스템 전체 신용경색으로 단정할 근거는 부족하다.",
+      "supporting_evidence": [
+        "고신용자 신용대출 거절률 19.7% 자료",
+        "8월 결제성 리볼빙 잔액 6조9,994억원, 평균 수수료율 17.48%",
+        "은행 연체율·회사채 만기구조 점검",
+        "서울 전세가격 상승과 HUG PF보증 확대"
+      ],
+      "counter_evidence": [
+        "HUG 관리대상 178개 중 정상 162개, 경보·주의 16개",
+        "신용지표 악화가 시스템 전체로 전이됐다는 근거는 아직 부족"
+      ],
+      "check_indicators": [
+        "은행·비은행 연체율",
+        "회사채 스프레드·차환",
+        "리볼빙",
+        "전세가격",
+        "HUG 경보·주의 사업장",
+        "대손충당금"
+      ],
+      "thesis_break_conditions": [
+        "대출 승인·차환시장·PF 지표가 안정",
+        "주거비 상승세 둔화와 연체율·대손비용 개선"
+      ]
+    }
+  ],
+  "timeline": [
+    {
+      "record_id": "2026-09-21-morning",
+      "N1": "STABLE",
+      "N2": "STRENGTHENING",
+      "N3": "STRENGTHENING",
+      "N4": "STABLE"
+    },
+    {
+      "record_id": "2026-09-21-afternoon",
+      "N1": "STABLE",
+      "N2": "STRENGTHENING",
+      "N3": "STABLE",
+      "N4": "STRENGTHENING"
+    },
+    {
+      "record_id": "2026-09-22-morning",
+      "N1": "STABLE",
+      "N2": "STRENGTHENING",
+      "N3": "STRENGTHENING",
+      "N4": "STRENGTHENING"
+    },
+    {
+      "record_id": "2026-09-22-afternoon",
+      "N1": "WEAKENING",
+      "N2": "STABLE",
+      "N3": "STABLE",
+      "N4": "STRENGTHENING"
+    },
+    {
+      "record_id": "2026-09-23-morning",
+      "N1": "STABLE",
+      "N2": "STRENGTHENING",
+      "N3": "STABLE",
+      "N4": "STABLE"
+    },
+    {
+      "record_id": "daily_2026-09-23_afternoon",
+      "N1": "STABLE",
+      "N2": "STRENGTHENING",
+      "N3": "STRENGTHENING",
+      "N4": "STABLE"
+    },
+    {
+      "record_id": "2026-09-24-morning",
+      "N1": "STRENGTHENING",
+      "N2": "STABLE",
+      "N3": "STABLE",
+      "N4": "STABLE"
+    },
+    {
+      "record_id": "2026-09-24-afternoon",
+      "N1": "STRENGTHENING",
+      "N2": "STABLE",
+      "N3": "STABLE",
+      "N4": "STRENGTHENING"
+    },
+    {
+      "record_id": "2026-09-25-morning",
+      "N1": "STRENGTHENING",
+      "N2": "STABLE",
+      "N3": "WEAKENING",
+      "N4": "STRENGTHENING"
+    },
+    {
+      "record_id": "2026-09-25_afternoon",
+      "N1": "STRENGTHENING",
+      "N2": "STABLE",
+      "N3": "STABLE",
+      "N4": "STABLE"
+    },
+    {
+      "record_id": "2026-09-26_morning",
+      "N1": "STRENGTHENING",
+      "N2": "STRENGTHENING",
+      "N3": "STABLE",
+      "N4": "STABLE"
+    },
+    {
+      "record_id": "2026-09-26_afternoon",
+      "N1": "STABLE",
+      "N2": "STABLE",
+      "N3": "STABLE",
+      "N4": "STRENGTHENING"
+    },
+    {
+      "record_id": "2026-09-27_morning",
+      "N1": "STABLE",
+      "N2": "STABLE",
+      "N3": "STABLE",
+      "N4": "STRENGTHENING"
+    },
+    {
+      "record_id": "2026-09-27_afternoon",
+      "N1": "STABLE",
+      "N2": "STABLE",
+      "N3": "STRENGTHENING",
+      "N4": "STRENGTHENING"
+    }
+  ],
+  "events": [
+    {
+      "event_id": "E01",
+      "event": "9월 1~20일 반도체 수출 341억달러, 전년 동기 대비 259.4% 증가",
+      "narrative_ids": [
+        "N2"
+      ],
+      "significance": "반도체 가설을 가장 직접적으로 강화한 실물 수출 지표"
+    },
+    {
+      "event_id": "E02",
+      "event": "9/21 코스피 종가 7,000선 재진입 후 9/23 7,080.92 마감",
+      "narrative_ids": [
+        "N2"
+      ],
+      "significance": "높은 금리에도 반도체 중심 실적·수급이 국내 주가를 지지"
+    },
+    {
+      "event_id": "E03",
+      "event": "9/22 대미 전략투자 1호로 텍사스 엔시날 가스복합화력발전소 추진 결정",
+      "narrative_ids": [
+        "N3"
+      ],
+      "significance": "대미 전략투자가 후보 논의에서 실제 1호 사업 추진 결정 단계로 진전"
+    },
+    {
+      "event_id": "E04",
+      "event": "OECD가 2026년 한국 성장률을 3.7%로 전망",
+      "narrative_ids": [
+        "N2"
+      ],
+      "significance": "수출·산업생산 개선이 거시 성장률 전망에 반영"
+    },
+    {
+      "event_id": "E05",
+      "event": "미국 10년물 국채 수익률 9/25 5.17%",
+      "narrative_ids": [
+        "N1",
+        "N2",
+        "N3"
+      ],
+      "significance": "실적 개선과 동시에 할인율 부담이 더 높아짐"
+    },
+    {
+      "event_id": "E06",
+      "event": "WTI 9/25 92.41달러로 전주 대비 하락",
+      "narrative_ids": [
+        "N1"
+      ],
+      "significance": "에너지 비용 부담은 일부 완화됐지만 브렌트유 100달러대는 유지"
+    },
+    {
+      "event_id": "E07",
+      "event": "미중 정상회담에서 무역 휴전 연장",
+      "narrative_ids": [],
+      "significance": "통상 불확실성을 일부 낮췄으나 관세·희토류·기술규제 핵심 쟁점은 후속 협상으로 이월"
+    },
+    {
+      "event_id": "E08",
+      "event": "한·멕시코 2026~2030 공동행동계획 채택",
+      "narrative_ids": [],
+      "significance": "원유·핵심자원·AI·방산 등 공급망 협력 틀이 확대됐으나 실적 연결은 후속 확인 필요"
+    },
+    {
+      "event_id": "E09",
+      "event": "AI 냉각·데이터센터 실물 투자와 엔비디아 파트너 등재 진전",
+      "narrative_ids": [
+        "N3"
+      ],
+      "significance": "AI 수요가 전력·냉각·건설로 확장되는 물리적 경로가 구체화"
+    },
+    {
+      "event_id": "E10",
+      "event": "고신용 대출심사·리볼빙·회사채·전세·PF 신용 부담 동시 부각",
+      "narrative_ids": [
+        "N4"
+      ],
+      "significance": "고금리의 전달경로가 취약차주를 넘어 가계·기업·부동산금융으로 확대"
+    }
+  ],
+  "market_price_validation": [
+    {
+      "variable": "KOSPI",
+      "start_date": "2026-09-18",
+      "start_value": 6894.23,
+      "end_date": "2026-09-23",
+      "end_value": 7080.92,
+      "change": "+2.71%",
+      "interpretation": "높은 장기금리에도 반도체 중심 실적 기대가 지수 상승을 지지"
+    },
+    {
+      "variable": "USD/KRW",
+      "start_date": "2026-09-18",
+      "start_value": 1383.3,
+      "end_date": "2026-09-23",
+      "end_value": 1358.4,
+      "change": "-24.9원",
+      "interpretation": "연휴 전 원화 강세. 9/28 정상 유동성에서 재확인 필요"
+    },
+    {
+      "variable": "US 10Y Treasury daily par yield",
+      "start_date": "2026-09-18",
+      "start_value": 5.01,
+      "end_date": "2026-09-25",
+      "end_value": 5.17,
+      "change": "+16bp",
+      "interpretation": "주식 강세와 할인율 부담이 동시에 진행"
+    },
+    {
+      "variable": "WTI",
+      "start_date": "2026-09-18",
+      "start_value": 100.3,
+      "end_date": "2026-09-25",
+      "end_value": 92.41,
+      "change": "-7.87%",
+      "interpretation": "에너지 비용 압력 일부 완화"
+    },
+    {
+      "variable": "Brent",
+      "start_date": "2026-09-18",
+      "start_value": 104.87,
+      "end_date": "2026-09-25",
+      "end_value": 104.32,
+      "change": "-0.52%",
+      "interpretation": "중동 공급위험 프리미엄은 높은 수준 유지"
+    }
+  ],
+  "investment_theses": [
+    {
+      "theme": "국내 반도체·HBM",
+      "change": "STRENGTHENING",
+      "representative_etf": {
+        "name": "TIGER Fn반도체TOP10",
+        "ticker": "396500"
+      },
+      "start_view": "HBM 수요와 AI 반도체 실적 확인을 중심으로 관찰",
+      "end_view": "반도체 수출 급증과 국내 지수·대형주 강세가 추가 근거. 다만 높은 수출 집중도와 장기금리·중국 공급 리스크 공존",
+      "weakening_conditions": [
+        "월간 수출 둔화",
+        "메모리 가격 하락",
+        "AI 설비투자 축소",
+        "중국 공급 확대"
+      ]
+    },
+    {
+      "theme": "AI 전력·냉각·송배전",
+      "change": "STRENGTHENING",
+      "representative_etf": {
+        "name": "KODEX AI전력핵심설비",
+        "ticker": "487240"
+      },
+      "start_view": "전력망 병목과 데이터센터 전력수요 중심",
+      "end_view": "냉각 생산라인·데이터센터 착공·엔시날 1호 프로젝트 추진·엔비디아 전력·냉각 파트너 등재까지 실물 경로 확대",
+      "weakening_conditions": [
+        "엔시날 본계약·자금집행 지연",
+        "전력연계 지연",
+        "신규수주 둔화",
+        "마진 하락"
+      ]
+    },
+    {
+      "theme": "머니마켓·초단기 자금",
+      "change": "STABLE",
+      "representative_etf": {
+        "name": "KODEX 머니마켓액티브",
+        "ticker": "488770"
+      },
+      "start_view": "고금리 구간의 대기성 자금·변동성 완충 역할",
+      "end_view": "장기금리 상승과 신용 차별화 속 비교자산 역할 유지. 예금이 아니며 원금보장 상품 아님",
+      "weakening_conditions": [
+        "단기금리 급락",
+        "편입자산 신용·유동성 위험 확대"
+      ]
+    },
+    {
+      "theme": "방산·공급망",
+      "change": "OBSERVE_STRENGTHENING",
+      "start_view": "주간 핵심 가설 밖의 관찰 영역",
+      "end_view": "KF-21 양산기 인도, UAE 협력, 한·멕시코 공동행동계획 등 실물·정책 신호 추가",
+      "weakening_conditions": [
+        "본계약·예산·수출 인허가 지연",
+        "예비협력 단계에 장기간 머무름"
+      ]
+    },
+    {
+      "theme": "내수·금융",
+      "change": "CAUTION_STABLE",
+      "start_view": "취약차주 중심 신용 양극화 관찰",
+      "end_view": "고신용 대출심사·리볼빙·회사채·주거·PF까지 범위 확대",
+      "weakening_conditions": [
+        "연체·대손비용 안정",
+        "실질소득·소비 개선",
+        "주거비 상승세 둔화"
+      ]
+    }
+  ],
+  "risks": [
+    {
+      "risk_id": "R1",
+      "risk": "미 장기금리·추가 긴축",
+      "status": "STRENGTHENING",
+      "change": "9/18 5.01% → 9/25 5.17%",
+      "linked_narratives": [
+        "N1",
+        "N2",
+        "N3"
+      ],
+      "check_indicators": [
+        "미 10년물",
+        "연준 발언",
+        "미 물가·고용"
+      ]
+    },
+    {
+      "risk_id": "R2",
+      "risk": "중동·에너지 비용",
+      "status": "WEAKENING",
+      "change": "WTI는 전주 대비 7.87% 하락했지만 브렌트유는 100달러대 유지",
+      "linked_narratives": [
+        "N1"
+      ],
+      "check_indicators": [
+        "WTI",
+        "Brent",
+        "호르무즈 통항",
+        "미·이란 협상"
+      ]
+    },
+    {
+      "risk_id": "R3",
+      "risk": "AI 투자 실행·프로젝트 금융",
+      "status": "STRENGTHENING",
+      "change": "실물투자 근거는 늘었지만 전력·인허가·자금조달이 실제 가동시점과 수익성을 좌우",
+      "linked_narratives": [
+        "N3"
+      ],
+      "check_indicators": [
+        "전력연계",
+        "착공",
+        "임차계약",
+        "프로젝트 금융조건",
+        "신규수주"
+      ]
+    },
+    {
+      "risk_id": "R4",
+      "risk": "신용·주거·PF",
+      "status": "STRENGTHENING",
+      "change": "고신용 대출심사, 리볼빙, 회사채, 전세, PF까지 부담 범위 확대",
+      "linked_narratives": [
+        "N4"
+      ],
+      "check_indicators": [
+        "연체율",
+        "회사채 스프레드",
+        "리볼빙",
+        "전세가격",
+        "HUG 경보·주의 사업장",
+        "충당금"
+      ]
+    },
+    {
+      "risk_id": "R5",
+      "risk": "수출·지수의 반도체 편중",
+      "status": "NEW",
+      "change": "반도체가 9월 1~20일 전체 수출의 47.8%",
+      "linked_narratives": [
+        "N2"
+      ],
+      "check_indicators": [
+        "월간 반도체 수출",
+        "메모리 가격",
+        "비반도체 수출",
+        "지수 기여도"
+      ]
+    },
+    {
+      "risk_id": "R6",
+      "risk": "통상·보호무역",
+      "status": "STABLE",
+      "change": "미중 무역휴전은 연장됐지만 핵심 쟁점 미해결, 한국 제품 대상 수입규제 증가",
+      "linked_narratives": [],
+      "check_indicators": [
+        "관세",
+        "희토류·기술규제",
+        "한국 수입규제 건수",
+        "후속 정상·실무협상"
+      ]
+    }
+  ],
+  "previous_week_watchlist_review": [
+    {
+      "topic": "고금리 속 선별 장세",
+      "result": "충족",
+      "effect": "미 10년물 상승에도 코스피·미 기술주가 올라 실적이 강한 업종으로 수급이 집중되는 가설 유지"
+    },
+    {
+      "topic": "AI 반도체",
+      "result": "부분 충족",
+      "effect": "1~20일 반도체 수출과 국내 주가가 강화 조건을 지지. 월간 확정수출·메모리 가격·이익추정치까지 전부 확인된 것은 아님"
+    },
+    {
+      "topic": "AI 전력 인프라",
+      "result": "부분 충족",
+      "effect": "냉각 생산라인·데이터센터 착공·엔시날 프로젝트·파트너 등재가 늘었지만 대형 신규수주와 마진 개선은 추가 확인 필요"
+    },
+    {
+      "topic": "대미 투자 패키지",
+      "result": "부분 충족",
+      "effect": "엔시날 가스복합화력발전소가 1호 사업으로 추진 결정. MOU·본계약·자금집행·착공과 수익배분 조건은 미확정"
+    },
+    {
+      "topic": "자금·취약신용",
+      "result": "부분 충족",
+      "effect": "대출심사·리볼빙·회사채·주거·PF 스트레스는 넓어졌지만 시스템 신용경색은 확인되지 않음"
+    },
+    {
+      "topic": "9/20 주말 지정학 사건",
+      "result": "약화",
+      "effect": "9/21 코스피 상승과 원/달러 하락으로 첫 거래일 광범위 위험회피는 확인되지 않음"
+    }
+  ],
+  "revised_views": [
+    {
+      "topic": "거시 비용의 중심",
+      "revision_type": "REFINED",
+      "revised_view": "고유가보다 장기금리를 더 큰 제약으로 봄. WTI는 크게 하락했지만 미 10년물은 상승"
+    },
+    {
+      "topic": "반도체 강세",
+      "revision_type": "STRENGTHENED",
+      "revised_view": "단순 기대 장세보다 수출 잠정치와 성장률 전망 등 실물 근거가 강화. 다만 반도체 편중 위험도 확대"
+    },
+    {
+      "topic": "AI 인프라",
+      "revision_type": "STRENGTHENED",
+      "revised_view": "전력망 병목에서 냉각 생산라인·데이터센터 착공·엔시날 프로젝트·파트너십으로 실물 단계 확대. 향후 수주·전력연계·마진 확인 필요"
+    },
+    {
+      "topic": "신용 위험",
+      "revision_type": "EXPANDED",
+      "revised_view": "저신용 차주뿐 아니라 고신용 대출심사·리볼빙·회사채·주거·PF까지 함께 점검"
+    },
+    {
+      "topic": "대미 전략투자",
+      "revision_type": "STRENGTHENED",
+      "revised_view": "후보 논의에서 엔시날 1호 사업 추진 결정 단계로 진전. 다만 계약·자금집행·수익성은 미확정"
+    }
+  ],
+  "next_week_watchlist": [
+    {
+      "topic": "미 장기금리",
+      "current_thesis": "5%대 장기금리가 가장 큰 할인율 제약",
+      "maintain_condition": "10년물이 5%대에서 등락하되 신용스프레드 급등 없음",
+      "strengthen_condition": "5.2% 이상 재상승과 추가 인상 기대 확대",
+      "weaken_condition": "물가·고용 둔화와 함께 5% 아래로 안정"
+    },
+    {
+      "topic": "반도체 수출",
+      "current_thesis": "수출·주가 근거 강화",
+      "maintain_condition": "9월 월간 수출과 메모리 가격이 높은 수준 유지",
+      "strengthen_condition": "월간 확정치·이익추정치 동반 상향",
+      "weaken_condition": "수출 증가율 급락, 메모리 가격 하락, 외국인 매도 확대"
+    },
+    {
+      "topic": "AI 전력·냉각 인프라",
+      "current_thesis": "실물 투자 단계 구체화",
+      "maintain_condition": "착공·증설 일정과 수주 흐름 유지",
+      "strengthen_condition": "신규 대형수주·임차계약·전력연계 확정",
+      "weaken_condition": "전력연계 지연, 프로젝트 금융 문제, 마진 하락"
+    },
+    {
+      "topic": "9/28 국내 재개장",
+      "current_thesis": "연휴 중 해외 충격이 한꺼번에 반영될 구간",
+      "maintain_condition": "원/달러와 외국인 수급이 안정적으로 정상화",
+      "strengthen_condition": "반도체 외국인 매수와 지수·원화 동반 안정",
+      "weaken_condition": "원화 급약세와 외국인 현·선물 동반 매도"
+    },
+    {
+      "topic": "신용·주거·PF",
+      "current_thesis": "부담 범위는 넓어졌지만 시스템 위기는 아님",
+      "maintain_condition": "연체·충당금·PF 경보 사업장이 통제 범위 유지",
+      "strengthen_condition": "연체율·신용스프레드·PF 경보 동시 악화",
+      "weaken_condition": "대출 승인·차환시장·PF 지표 안정과 주거비 상승세 둔화"
+    },
+    {
+      "topic": "통상·공급망",
+      "current_thesis": "협력 확대와 보호무역 병존",
+      "maintain_condition": "미중 휴전 유지와 한·멕시코 후속협의 진행",
+      "strengthen_condition": "실제 투자·수주·자원 공급계약 체결",
+      "weaken_condition": "관세·수입규제 확대 또는 후속 협상 지연"
+    },
+    {
+      "topic": "대미 전략투자 1호",
+      "current_thesis": "엔시날 가스발전이 추진 결정됐지만 계약·자금집행은 미확정",
+      "maintain_condition": "MOU·사업비·지분·회수조건 협상이 상업적 합리성을 유지",
+      "strengthen_condition": "본계약·자금집행·착공과 국내 기업 수주 구체화",
+      "weaken_condition": "전력 판매처 미확보, 수익배분 악화, 사업비 증가 또는 협상 지연"
+    }
+  ],
+  "references": [
+    {
+      "title": "관세청·정책브리핑 - 2026년 9월 1~20일 수출입 현황",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156782594&pWise=sub&pWiseSub=C3"
+    },
+    {
+      "title": "연합뉴스 - 9월 23일 코스피 7,080.92 마감",
+      "url": "https://www.yna.co.kr/view/AKR20260923145051008"
+    },
+    {
+      "title": "연합뉴스 - 9월 23일 원/달러 1,358.4원",
+      "url": "https://www.yna.co.kr/view/AKR20260923151000002"
+    },
+    {
+      "title": "미 재무부 - 2026년 9월 일일 국채 수익률",
+      "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value_month=202609&type=daily_treasury_yield_curve"
+    },
+    {
+      "title": "OECD - 2026년 9월 중간 경제전망",
+      "url": "https://www.oecd.org/en/publications/oecd-economic-outlook-interim-report-september-2026_f751d02b-en/full-report.html"
+    },
+    {
+      "title": "Reuters - 9월 25일 미국 증시·AI 기대와 고금리",
+      "url": "https://www.reuters.com/business/wall-st-futures-gain-ai-enthusiasm-eases-worries-over-higher-oil-prices-yields-2026-09-25/"
+    },
+    {
+      "title": "Reuters - 9월 25일 미국·이란 협상 기대와 국제유가",
+      "url": "https://www.reuters.com/business/energy/oil-prices-slide-about-2-us-iran-explore-path-out-war-2026-09-25/"
+    },
+    {
+      "title": "Reuters - 미중 정상회담 주요 결과",
+      "url": "https://www.reuters.com/world/china/four-takeaways-trumps-summit-with-xi-washington-2026-09-24/"
+    },
+    {
+      "title": "대한민국 정책브리핑 - 한·멕시코 정상회담 결과",
+      "url": "https://www.korea.kr/multi/visualNewsView.do?newsId=148972606&pWise=main&pWiseMain=R3"
+    },
+    {
+      "title": "현대건설 - 포항 40MW AI 데이터센터 공사 착수",
+      "url": "https://www.hdec.kr/kr/newsroom/news_view.aspx?NewsListType=news_list&NewsSeq=1564&NewsType=LATEST"
+    },
+    {
+      "title": "LG전자 - 엔비디아 파트너 네트워크 전력·냉각 분야 등재",
+      "url": "https://www.lge.co.kr/story/newsroom/236188"
+    },
+    {
+      "title": "HUG - PF 보증 사업장 관리정보",
+      "url": "https://khug.or.kr/hug/web/cg/pf/cgpf000004.jsp?tabFocus=Y"
+    },
+    {
+      "title": "연합뉴스 - 대미 전략투자 1호 텍사스 엔시날 가스복합화력발전소 추진 결정",
+      "url": "https://www.yna.co.kr/amp/view/AKR20260922068851001"
+    },
+    {
+      "title": "연합뉴스 - 9월 22일 오전 코스피·반도체 수급",
+      "url": "https://www.yna.co.kr/amp/view/AKR20260922038351008"
+    }
+  ],
+  "statistics": {
+    "raw_references": 209,
+    "unique_references": 132,
+    "unique_events": 10,
+    "narrative_count": 4,
+    "daily_report_count": 14,
+    "missing_daily_reports": 0
+  }
+}
